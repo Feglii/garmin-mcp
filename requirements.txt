@@ -1,2 +1,2 @@
 garminconnect
-mcp
+mcp<2
