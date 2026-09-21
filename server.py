@@ -43,4 +43,6 @@ def frequenza_cardiaca_oggi() -> str:
     return str(dati)
 
 if __name__ == "__main__":
-    mcp.run(transport="streamable-http", host="0.0.0.0", port=int(os.environ.get("PORT", 8000)))
+    mcp.settings.host = "0.0.0.0"
+    mcp.settings.port = int(os.environ.get("PORT", 8000))
+    mcp.run(transport="streamable-http")
